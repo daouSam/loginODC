@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML LOGIN</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script type="text/javascript" src="login.js" ></script>
+</head>
+<body>
+	<form action="login_menu.html" method="POST" autocomplete="off">
+		<div class="login">
+			<p id="t_login">Login authentification</p>
+			<label for="email" class="lab">email</label><br>
+			<input class="inp" type="email" id="email" name="email" pattern="\w+@kalanso.com" required placeholder="votre email ici"><br>
+			<label for="passds" class="lab">mot de passe</label><br>
+			<input class="inp" id="passds" type="password" name="pass" maxlength="8" pattern="(?=.*\d)(?=.*[a-z]).{6,8}" required placeholder="password"><br>
+			<input type="checkbox" onclick="Afficher()">Afficher
+			<hr>
+			<input type="submit" name="bouton" value="Connexion"><br />
+			<input type="reset" name="efface" value="Reinitialiser">
+			</div>
+	</form>
+</body>
+</html>
